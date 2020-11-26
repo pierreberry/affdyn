@@ -1,0 +1,47 @@
+body {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    text-align: center;
+    margin-top: 80px;
+}
+
+.collapsible-header{
+    min-height: 10vh;
+    justify-content: center;
+    align-items: center;
+}
+.card-title{
+    padding-bottom: 25px;
+}
+.card_player {
+    min-height: 35vh;
+}
+
+.card-image img{
+    object-fit: contain;
+}
+
+.card_ecrans .card-content{
+    display: flex;
+    width: 100%;
+    min-height: 10vh;
+    margin: 0;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+}
+
+.card_ecrans .card-content p{
+    font-size: 1em;
+    text-align: center;
+}
+
+.modal-content p{
+    text-align: justify;
+}

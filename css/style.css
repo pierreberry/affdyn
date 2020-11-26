@@ -1,0 +1,254 @@
+@import url(https://fonts.googleapis.com/css?family=Montserrat);
+@font-face {
+  font-family: "mafont";
+  src: url("fonts/LibreFranklin-Medium.ttf");
+  font-style: normal;
+  font-weight: normal;
+}
+
+body {
+  font-family: "mafont";
+  background-image: url(imgfond.png);
+  background-attachment: fixed;
+}
+
+main {
+  text-align: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.brand-logo {
+  width: 20%;
+}
+
+.respons_logo {
+  display: none;
+}
+
+@media screen and (max-width: 1550px) {
+  .respons_logo {
+    display: initial;
+    width: 100%;
+  }
+  .logo_normal {
+    visibility: hidden;
+  }
+}
+
+nav {
+  height: 80px;
+  line-height: 80px;
+}
+
+nav i, nav [class^="mdi-"], nav [class*="mdi-"], nav i.material-icons {
+  height: 80px;
+  line-height: 80px;
+}
+
+nav .button-collapse i {
+  height: 80px;
+  line-height: 80px;
+}
+
+nav .brand-logo {
+  font-size: 1.6rem;
+}
+
+.nav_contact {
+  color: #d20041;
+}
+
+@media only screen and (min-width: 601px) {
+  nav, nav .nav-wrapper i, nav a.button-collapse, nav a.button-collapse i {
+    height: 80px;
+    line-height: 80px;
+  }
+}
+
+.card-image img {
+  max-height: 500px;
+}
+
+.card-reveal ul {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.card-reveal p {
+  font-size: 1.2em;
+  text-align: left;
+}
+
+.card-reveal h4 {
+  text-align: center;
+}
+
+.sidenav-trigger nav {
+  color: black;
+}
+
+.test_menu {
+  position: absolute;
+  position: fixed;
+}
+
+::-webkit-scrollbar {
+  width: 15px;
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 5px grey;
+          box-shadow: inset 0 0 5px grey;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(89, 91, 92, 0.5);
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(186, 188, 189, 0.5);
+}
+
+.button_footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  cursor: defaut;
+}
+
+.button_footer i {
+  font-size: 3em;
+  color: #d20041;
+}
+
+.button_footer a {
+  background-color: transparent !important;
+}
+
+.collapsible-header {
+  cursor: default;
+}
+
+.l1 {
+  text-align: center;
+}
+
+.l1 li {
+  text-align: left;
+  font-size: 0.7em;
+}
+
+/* TEST BOUTON */
+.button_contact {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 50px;
+  width: 200px;
+  display: table;
+  font-size: 20px;
+  font-weight: bold;
+  -webkit-box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
+          box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.55);
+  -webkit-transition: background .5s;
+  transition: background .5s;
+  cursor: pointer;
+  background: #D50000;
+}
+
+.button_contact span {
+  width: 75%;
+  height: 75%;
+  padding: 20px;
+  color: #ffffff;
+  background: transparent;
+  font-weight: 1000;
+  font-size: 1.6em;
+}
+
+.button_contact .away {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+
+.button_contact .over {
+  display: none;
+}
+
+.button_contact:hover span.away {
+  display: none;
+}
+
+.button_contact:hover span.over {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  color: #ffffff;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.button_contact:hover {
+  background: #303744;
+}
+
+.openclose {
+  position: absolute;
+  right: 10px;
+}
+/*# sourceMappingURL=style.css.map */
+
+/** TEST **/
+
+.loader-wrapper {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #242f3f;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1000 !important;
+}
+
+.loader {
+  display: inline-block;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  border: 4px solid #Fff;
+  animation: loader 2s infinite ease;
+}
+
+.loader-inner {
+  vertical-align: top;
+  display: inline-block;
+  width: 100%;
+  background-color: #fff;
+  animation: loader-inner 2s infinite ease-in;
+}
+
+@keyframes loader {
+  0% { transform: rotate(0deg);}
+  25% { transform: rotate(180deg);}
+  50% { transform: rotate(180deg);}
+  75% { transform: rotate(360deg);}
+  100% { transform: rotate(360deg);}
+}
+
+@keyframes loader-inner {
+  0% { height: 0%;}
+  25% { height: 0%;}
+  50% { height: 100%;}
+  75% { height: 100%;}
+  100% { height: 0%;}
+}

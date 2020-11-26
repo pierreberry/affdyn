@@ -1,0 +1,176 @@
+body {
+    display: flex;
+    width: 100%;
+    min-height: 100vh;
+    flex-direction: column;
+}
+
+main {
+    flex: 1 0 auto;
+    margin-top: 30px;
+}
+
+.btn-floating .icons_activite{    
+    font-size: 2em;
+    background-color: #d20041 !important;
+}
+
+.index_activity img{
+    min-height: 200px;
+}
+
+.index_activity{
+    background-color: rgba(255, 255, 255, 0) !important;
+}
+
+.content-activity {
+    height: 8vh;
+    margin-bottom: 5px;
+    background-color: rgba(255, 255, 255, 1) !important;
+    margin: 0 !important;
+}
+
+.content-activity a{
+    color: #d20041 !important;    
+    margin: 0 !important;
+}
+
+.card .card-action{
+    padding: 0 !important;
+    position: initial;
+    justify-content: center !important;
+}
+
+
+.bgadministration{
+    background-image: url(activity/administration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+}
+
+.bgbanque{
+    background-image: url(activity/banqueassu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.bgcorporate{
+    background-image: url(activity/corporate.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+}
+
+.bgcongres{
+    background-image: url(activity/banqueassu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.bgdivertissement{
+    background-image: url(activity/banqueassu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.bgeducation{
+    background-image: url(activity/education.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.bghotel{
+    background-image: url(activity/banqueassu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.bgindustrie{
+    background-image: url(activity/banqueassu.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+
+.bgrestau{
+    background-image: url(activity/restauration.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+}
+
+.bgretail{
+    background-image: url(activity/retail.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 50%;
+}
+.bgsante{
+    background-image: url(activity/sante.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 25%;
+}
+.bgsport{
+    background-image: url(activity/sport.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: 45%;
+}
+
+
+.banniere_activite{
+    width: 100%;
+    height: 400px;
+    transition: all 0.5s;
+}
+
+.banniere_activite_bas{
+    width: 100%;
+    height: 400px;
+    transition: all 0.5s;
+    transform: scale(1.4) translateY(69px);
+}
+
+.mescards{
+    transform: translateY(0);
+    transition: all 0.5s;
+}
+
+.mescardsbas{
+    transform: translateY(-100px);
+    transition: all 0.5s;
+}
+
+.macarte{
+    display: flex;
+    flex-direction: column;
+    min-height: 250px;
+    justify-content: space-between;
+}
+
+.macarte h5{
+    margin-top: -13px;
+}
+
+.img_card img{
+    max-height: 250px;
+    object-fit: cover;
+}
+
+.modal{
+    width: 75%;
+    min-height: 910px;
+    margin-top: -90px;
+}
+
+.modal iframe{
+    width: 100%;
+    height: 800px;
+}
